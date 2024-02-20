@@ -15,9 +15,9 @@
 
 ## Explane
 $$
-dp(n) = 
-\begin{cases}
-\frac{n}{2},  & \text{if $n$ is even} \\
-3n+1, & \text{if $n$ is odd}
+dp(n) = \begin{cases} 
+0 & \text{if } n = 0 \\
+-1 & \text{if } n < 0 \\
+\min(dp(n - \text{coin}) + 1 | \text{coin} \in \text{coins}) & \text{if } n > 0 
 \end{cases}
 $$
