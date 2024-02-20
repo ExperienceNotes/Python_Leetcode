@@ -18,6 +18,6 @@ class Solution:
                     contiune
                 res = min(res, 1 + subproblem)
             # 計算結束後記得存入節省重複計算時間
-            memo[n] = res
+            memo[n] = res if res!= float('INF') else -1
             return memo[n]
         return dp(amount)
