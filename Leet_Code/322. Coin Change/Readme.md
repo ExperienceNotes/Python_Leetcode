@@ -7,6 +7,17 @@
 * Return the fewest number of coins that you need to make up that amount.
 
 
-## Example:
+## Example
 * coins = [1, 2, 5]
 * amount = 11
+* Explanation: 11 = 5 + 5 + 1
+* output: 3
+
+## Explane
+$$
+dp(n) = 
+\begin{cases}
+\frac{n}{2},  & \text{if $n$ is even} \\
+3n+1, & \text{if $n$ is odd}
+\end{cases}
+$$
