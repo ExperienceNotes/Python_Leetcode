@@ -34,3 +34,4 @@ def dp(n):
     res = res if res != float('INF') else -1
     return res
 ```
+![Coin Tree](Coin Change.JPG)
