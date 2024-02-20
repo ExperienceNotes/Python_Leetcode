@@ -35,4 +35,4 @@ def dp(n):
     return res
 ```
 
-![Coin Tree](Leet_Code/322. Coin Change/Coin Change.JPG)
+![Coin Tree](322. Coin Change/Coin Change.JPG)
