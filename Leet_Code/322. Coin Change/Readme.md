@@ -21,3 +21,16 @@ dp(n) = \begin{cases}
 \min(dp(n - \text{coin}) + 1 | \text{coin} \in \text{coins}) & \text{if } n > 0 
 \end{cases}
 $$
+```python
+def dp(n):
+    if n == 0:
+        return 0
+    if n < 0:
+        return -1
+    res = float('INF')
+    for coin in coins:
+        subproblem = dn(n - coin)
+        res = min(res, 1 + subproblem)
+    res = res if res != float('INF') else -1
+    return res
+```
